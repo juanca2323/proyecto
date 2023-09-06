@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ingreso de Productos</h1>
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre del Producto:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="Placa Madre">Placa Madre</option>
+            <option value="Procesador">Procesador</option>
+            <option value="Tarjeta Gráfica">Tarjeta Gráfica</option>
+            <option value="RAM">RAM</option>
+            <option value="Disco Duro">Disco Duro</option>
+            <option value="Disco Sólido">Disco Sólido</option>
+        </select>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+
+        <label for="cantidad">Cantidad Disponible:</label>
+        <input type="number" id="cantidad" name="cantidad" required>
+
+        <label for="socket">socket:</label>
+        <input type="text" id="socket" name="socket" required>
+
+        <label for="chipset">chipset:</label>
+        <input type="text" id="text" name="text" required>
+
+        <label for="capacidad">capacidad:</label>
+        <input type="number" id="capacidad" name="capacidad" required>
+
+        <!-- Agrega más campos según sea necesario -->
+
+        <input type="submit" value="Ingresar Producto">
+    </form>
+</body>
+</html>
